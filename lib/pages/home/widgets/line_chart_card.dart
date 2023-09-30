@@ -104,11 +104,6 @@ class LineChartCard extends StatelessWidget {
                           Colors.grey, // Background color of the tooltip
                       tooltipRoundedRadius: 8,
                       tooltipPadding: const EdgeInsets.all(20),
-                      // tooltipBottomMargin: 12,
-                      // tooltipTextStyle: TextStyle(
-                      //   color: Colors.white, // Text color of the tooltip
-                      //   fontSize: 14,
-                      // ),
                       getTooltipItems: (List<LineBarSpot> touchedBarSpots) {
                         // Customize the appearance of the vertical line
                         return touchedBarSpots.map((barSpot) {
