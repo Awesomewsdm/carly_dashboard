@@ -211,315 +211,330 @@ class HomePage extends StatelessWidget {
               _height(context),
               Row(
                 children: [
-                  CustomCard(
-                      child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Analytics Overview",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Row(
-                          children: [
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      color: Colors.white,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                'Revenue',
-                                                style: Theme.of(context)
-                                                    .textTheme
-                                                    .bodySmall!
-                                                    .copyWith(
-                                                        color: Colors.black),
-                                              ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                children: [
-                                                  const Icon(
-                                                    Icons.arrow_upward,
-                                                    color: Colors.green,
-                                                    size: 15.0,
-                                                  ),
-                                                  SizedBox(
-                                                    width: size.width * 0.001,
-                                                  ),
-                                                  Text(
-                                                    '+25%',
-                                                    style: Theme.of(context)
-                                                        .textTheme
-                                                        .bodySmall!
-                                                        .copyWith(
-                                                            color:
-                                                                Colors.green),
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: size.height * 0.02,
-                                          ),
-                                          const Text(
-                                            'GHC 28.8K',
-                                            style: TextStyle(
-                                              fontSize: 26.0,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const DotWidget(
-                                      padding:
-                                          EdgeInsets.only(left: 32, right: 52),
-                                      color: Color(0xff96D8F3),
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.all(12),
-                                      color: Colors.white,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                'Payouts',
-                                                style: Theme.of(context)
-                                                    .textTheme
-                                                    .bodySmall!
-                                                    .copyWith(
-                                                        color: Colors.black),
-                                              ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                children: [
-                                                  const Icon(
-                                                    Icons.arrow_upward,
-                                                    color: Colors.green,
-                                                    size: 15.0,
-                                                  ),
-                                                  SizedBox(
-                                                    width: size.width * 0.001,
-                                                  ),
-                                                  Text(
-                                                    '+25%',
-                                                    style: Theme.of(context)
-                                                        .textTheme
-                                                        .bodySmall!
-                                                        .copyWith(
-                                                            color:
-                                                                Colors.green),
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: size.height * 0.02,
-                                          ),
-                                          const Text(
-                                            'GHC 78K',
-                                            style: TextStyle(
-                                              fontSize: 26.0,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const DotWidget(
-                                      padding:
-                                          EdgeInsets.only(left: 63, right: 15),
-                                      color: Color(0xff4887FA),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 40,
-                                ),
-                                Row(
-                                  children: [
-                                    TCardWidegt(size: size),
-                                    const DotWidget(
-                                      padding:
-                                          EdgeInsets.only(left: 20, right: 50),
-                                      color: Color(0xff31D0F4),
-                                    ),
-                                    Container(
-                                      color: Colors.white,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Text(
-                                                'Gross Income \n(Revenue - Payouts)',
-                                                style: Theme.of(context)
-                                                    .textTheme
-                                                    .bodySmall!
-                                                    .copyWith(
-                                                        color: Colors.black),
-                                              ),
-                                              const SizedBox(
-                                                width: 20,
-                                              ),
-                                              Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                children: [
-                                                  const Icon(
-                                                    Icons.arrow_upward,
-                                                    color: Colors.green,
-                                                    size: 15.0,
-                                                  ),
-                                                  SizedBox(
-                                                    width: size.width * 0.001,
-                                                  ),
-                                                  Text(
-                                                    '+25%',
-                                                    style: Theme.of(context)
-                                                        .textTheme
-                                                        .bodySmall!
-                                                        .copyWith(
-                                                            color:
-                                                                Colors.green),
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: size.height * 0.02,
-                                          ),
-                                          const Text(
-                                            'GHC 30.8K',
-                                            style: TextStyle(
-                                              fontSize: 26.0,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    const DotWidget(
-                                      color: Color(0xff031C48),
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                            Image.asset(
-                              tPieChart,
-                              fit: BoxFit.fitWidth,
-                              height: 150,
-                              width: 150,
-                            ),
-                          ],
-                        ),
-                        // Expanded(
-                        //   child: PieChart(
-                        //     PieChartData(
-                        //       sections: [
-                        //         PieChartSectionData(
-                        //           color: Colors.blue,
-                        //           value: 30, // Replace with your data
-                        //         ),
-                        //         PieChartSectionData(
-                        //           color: Colors.red,
-                        //           value: 20, // Replace with your data
-                        //         ),
-                        //         PieChartSectionData(
-                        //           color: Colors.green,
-                        //           value: 15, // Replace with your data
-                        //         ),
-                        //         // Add more sections with different colors and values as needed
-                        //       ],
-                        //       sectionsSpace: 0,
-                        //       centerSpaceRadius: 50,
-                        //     ),
-                        //   ),
-                        // ),
-                      ],
-                    ),
-                  )),
-                  _width(context),
-                  Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(0.0),
-                        child: Container(
-                          height: 146,
-                          width: 270,
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(8.0),
-                            ),
-                            color: cardBackgroundColor,
+                  Expanded(
+                    child: CustomCard(
+                        child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Analytics Overview",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
                           ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(45.0),
-                            child: Center(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            children: [
+                              Column(
                                 children: [
-                                  Text("Number of users",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        color: Color(0xff828282),
-                                        fontWeight: FontWeight.w500,
-                                      )),
                                   Row(
                                     children: [
-                                      Text(
-                                        "235",
-                                        style: TextStyle(
-                                          fontSize: 24,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w500,
+                                      Container(
+                                        color: Colors.white,
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                Text(
+                                                  'Revenue',
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .bodySmall!
+                                                      .copyWith(
+                                                          color: Colors.black),
+                                                ),
+                                                SizedBox(
+                                                  width: size.width * 0.05,
+                                                ),
+                                                Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    const Icon(
+                                                      Icons.arrow_upward,
+                                                      color: Colors.green,
+                                                      size: 15.0,
+                                                    ),
+                                                    SizedBox(
+                                                      width: size.width * 0.001,
+                                                    ),
+                                                    Text(
+                                                      '+25%',
+                                                      style: Theme.of(context)
+                                                          .textTheme
+                                                          .bodySmall!
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.green),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                            SizedBox(
+                                              height: size.height * 0.02,
+                                            ),
+                                            const Text(
+                                              'GHC 28.8K',
+                                              style: TextStyle(
+                                                fontSize: 26.0,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                          ],
                                         ),
                                       ),
-                                      Spacer(),
-                                      Icon(
-                                        Icons.arrow_upward,
-                                        color: Colors.green,
+                                      const DotWidget(
+                                        padding: EdgeInsets.only(
+                                            left: 32, right: 52),
+                                        color: Color(0xff96D8F3),
                                       ),
-                                      Text("25%",
-                                          style: TextStyle(
-                                            fontSize: 13,
-                                            color: Colors.green,
-                                            fontWeight: FontWeight.w500,
-                                          ))
+                                      Container(
+                                        padding: const EdgeInsets.all(12),
+                                        color: Colors.white,
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                Text(
+                                                  'Payouts',
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .bodySmall!
+                                                      .copyWith(
+                                                          color: Colors.black),
+                                                ),
+                                                SizedBox(
+                                                  width: size.width * 0.01,
+                                                ),
+                                                Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    const Icon(
+                                                      Icons.arrow_upward,
+                                                      color: Colors.green,
+                                                      size: 15.0,
+                                                    ),
+                                                    SizedBox(
+                                                      width: size.width * 0.001,
+                                                    ),
+                                                    Text(
+                                                      '+25%',
+                                                      style: Theme.of(context)
+                                                          .textTheme
+                                                          .bodySmall!
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.green),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                            SizedBox(
+                                              height: size.height * 0.02,
+                                            ),
+                                            const Text(
+                                              'GHC 78K',
+                                              style: TextStyle(
+                                                fontSize: 26.0,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      const DotWidget(
+                                        padding: EdgeInsets.only(
+                                            left: 63, right: 15),
+                                        color: Color(0xff4887FA),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 40,
+                                  ),
+                                  Row(
+                                    children: [
+                                      TCardWidegt(size: size),
+                                      const DotWidget(
+                                        padding: EdgeInsets.only(
+                                            left: 20, right: 50),
+                                        color: Color(0xff31D0F4),
+                                      ),
+                                      Container(
+                                        color: Colors.white,
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                Text(
+                                                  'Gross Income \n(Revenue - Payouts)',
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .bodySmall!
+                                                      .copyWith(
+                                                          color: Colors.black),
+                                                ),
+                                                const SizedBox(
+                                                  width: 20,
+                                                ),
+                                                Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    const Icon(
+                                                      Icons.arrow_upward,
+                                                      color: Colors.green,
+                                                      size: 15.0,
+                                                    ),
+                                                    SizedBox(
+                                                      width: size.width * 0.001,
+                                                    ),
+                                                    Text(
+                                                      '+25%',
+                                                      style: Theme.of(context)
+                                                          .textTheme
+                                                          .bodySmall!
+                                                          .copyWith(
+                                                              color:
+                                                                  Colors.green),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                            SizedBox(
+                                              height: size.height * 0.02,
+                                            ),
+                                            const Text(
+                                              'GHC 30.8K',
+                                              style: TextStyle(
+                                                fontSize: 26.0,
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      const DotWidget(
+                                        color: Color(0xff031C48),
+                                      ),
                                     ],
                                   )
                                 ],
                               ),
+                              Expanded(
+                                child: Image.asset(
+                                  tPieChart,
+                                  fit: BoxFit.fitWidth,
+                                  height: 150,
+                                  width: 150,
+                                ),
+                              ),
+                            ],
+                          ),
+                          // Expanded(
+                          //   child: PieChart(
+                          //     PieChartData(
+                          //       sections: [
+                          //         PieChartSectionData(
+                          //           color: Colors.blue,
+                          //           value: 30, // Replace with your data
+                          //         ),
+                          //         PieChartSectionData(
+                          //           color: Colors.red,
+                          //           value: 20, // Replace with your data
+                          //         ),
+                          //         PieChartSectionData(
+                          //           color: Colors.green,
+                          //           value: 15, // Replace with your data
+                          //         ),
+                          //         // Add more sections with different colors and values as needed
+                          //       ],
+                          //       sectionsSpace: 0,
+                          //       centerSpaceRadius: 50,
+                          //     ),
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                    )),
+                  ),
+                  _width(context),
+                  Column(
+                    children: [
+                      Container(
+                        height: 130,
+                        width: 270,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(8.0),
+                          ),
+                          color: cardBackgroundColor,
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.all(39.0),
+                          child: Center(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Number of users",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Color(0xff828282),
+                                      fontWeight: FontWeight.w500,
+                                    )),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "235",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Icon(
+                                      Icons.arrow_upward,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      "25%",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        color: Colors.green,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
                             ),
                           ),
                         ),
