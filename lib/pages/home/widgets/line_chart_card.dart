@@ -97,8 +97,35 @@ class LineChartCard extends StatelessWidget {
               aspectRatio: Responsive.isMobile(context) ? 9 / 4 : 16 / 6,
               child: LineChart(
                 LineChartData(
-                  lineTouchData: const LineTouchData(
+                  lineTouchData: LineTouchData(
                     handleBuiltInTouches: true,
+                    touchTooltipData: LineTouchTooltipData(
+                      tooltipBgColor:
+                          Colors.grey, // Background color of the tooltip
+                      tooltipRoundedRadius: 8,
+                      tooltipPadding: const EdgeInsets.all(20),
+                      // tooltipBottomMargin: 12,
+                      // tooltipTextStyle: TextStyle(
+                      //   color: Colors.white, // Text color of the tooltip
+                      //   fontSize: 14,
+                      // ),
+                      getTooltipItems: (List<LineBarSpot> touchedBarSpots) {
+                        // Customize the appearance of the vertical line
+                        return touchedBarSpots.map((barSpot) {
+                          final flSpot = barSpot;
+                          return LineTooltipItem(
+                            flSpot.y.toStringAsFixed(
+                                2), // Display your desired data here
+                            const TextStyle(
+                              color: Colors.white, // Text color of the tooltip
+                              fontSize: 12,
+                            ),
+                          );
+                        }).toList();
+                      },
+                      fitInsideHorizontally: true,
+                      fitInsideVertically: true,
+                    ),
                   ),
                   clipData: const FlClipData.horizontal(),
                   gridData: FlGridData(
